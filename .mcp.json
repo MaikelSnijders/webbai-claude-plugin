@@ -2,7 +2,10 @@
   "mcpServers": {
     "webbai": {
       "type": "http",
-      "url": "https://webbai.nl/mcp"
+      "url": "https://webbai.nl/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
     }
   }
 }

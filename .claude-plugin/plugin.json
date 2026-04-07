@@ -6,5 +6,11 @@
     "name": "Webbai",
     "email": "info@webbai.nl"
   },
-  "homepage": "https://webbai.nl"
+  "homepage": "https://webbai.nl",
+  "userConfig": {
+    "api_key": {
+      "description": "Your Webbai API key (find it in Settings at webbai.nl)",
+      "sensitive": true
+    }
+  }
 }
