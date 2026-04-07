@@ -1,16 +1,10 @@
 {
-  "name": "tara-wa",
-  "description": "WhatsApp messaging, lead follow-up, and automation for your business. Send reminders, manage conversations, and set up automated flows.",
+  "name": "webbai",
+  "description": "Connect Claude to WhatsApp. Send messages, follow up with leads, run bulk campaigns, set up automations — all through natural language.",
   "version": "1.0.0",
-  "userConfig": {
-    "api_key": {
-      "description": "Your tara-wa API key (get one at https://178-62-223-25.sslip.io)",
-      "sensitive": true
-    },
-    "server_url": {
-      "description": "tara-wa server URL",
-      "default": "https://178-62-223-25.sslip.io"
-    }
+  "author": {
+    "name": "Webbai",
+    "email": "info@webbai.nl"
   },
-  "channels": ["tara-wa-channel"]
+  "homepage": "https://webbai.nl"
 }

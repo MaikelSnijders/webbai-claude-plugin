@@ -1,6 +1,6 @@
-# tara-wa
+# Webbai
 
-WhatsApp messaging, lead follow-up, and automation plugin for Claude Code.
+Connect Claude to WhatsApp. Send messages, follow up with leads, run bulk campaigns, and set up automations — all through natural language.
 
 ## Install
 
@@ -8,27 +8,21 @@ WhatsApp messaging, lead follow-up, and automation plugin for Claude Code.
 /install github:Ad-Up-VC/tara-wa-plugin
 ```
 
-Claude will ask for your API key — get one by signing up at [tara-wa](https://178-62-223-25.sslip.io).
+Claude will open your browser to log in at [webbai.nl](https://webbai.nl). No API key needed.
 
 ## Skills
 
 | Command | Description |
 |---------|-------------|
-| `/tara-wa:setup` | Connect your WhatsApp Business number and set up daily reminders |
-| `/tara-wa:send-reminders` | Check calendar and send WhatsApp reminders to today's clients |
-| `/tara-wa:inbox` | View and reply to incoming WhatsApp messages |
-| `/tara-wa:flows` | Create and manage automation flows (e.g. auto-send welcome message to new leads) |
+| `/webbai:setup` | Connect your WhatsApp Business number and set up reminders |
+| `/webbai:send-reminders` | Check calendar and send WhatsApp reminders to today's clients |
+| `/webbai:inbox` | View and reply to incoming WhatsApp messages |
+| `/webbai:flows` | Create and manage automation flows in plain English |
 
-## What it does
+## What you can do
 
-- **Send WhatsApp messages** — templates and free-form (within 24h window)
-- **Receive replies** — real-time inbox for WhatsApp conversations
-- **Automate flows** — set up triggers (new lead, booking) to auto-send templates
-- **AI-powered** — Claude generates personalized messages for each client
-- **Calendar integration** — uses Claude's native Google Calendar to check appointments
-
-## Requirements
-
-- Claude Code v2.1.80+
-- A tara-wa account with API key
-- WhatsApp Business number (connected via the web dashboard)
+- **"Send the welcome template to all new leads"** — bulk messaging with smart queue
+- **"Set up an automation: when a Facebook lead comes in, send welcome_v1"** — automations in plain English
+- **"Import contacts.csv and send them the promo template"** — CSV import + bulk send
+- **"Check my inbox for unread messages"** — WhatsApp inbox management
+- **"What new leads came in today?"** — lead tracking
