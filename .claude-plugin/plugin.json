@@ -7,7 +7,7 @@
     "email": "info@webbai.nl"
   },
   "homepage": "https://webbai.nl",
-  "repository": "https://github.com/Ad-Up-VC/tara-wa-plugin",
+  "repository": "https://github.com/MaikelSnijders/webbai-claude-plugin",
   "keywords": ["whatsapp", "messaging", "crm", "automations", "leads", "reminders"],
   "license": "MIT"
 }
