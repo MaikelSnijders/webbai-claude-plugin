@@ -16,12 +16,15 @@ Then drafts personalized replies and waits for your approval before sending anyt
 ## Workflow
 
 1. Call `get_inbound_messages` with `unread_only: true` to find unanswered messages
-2. For each message, check the `already_replied` field — skip any where `already_replied` is true
-3. For each truly unanswered message:
+2. For each message, check:
+   - `already_replied` — if true, skip (already answered)
+   - `active_automation` — if set, skip (automation flow is handling this contact, mention it in the report)
+3. For each truly unanswered message with no automation:
    - Check if it's within the 24h reply window
    - Draft a reply that matches the message tone and answers the question
    - Present for approval: send / edit / skip
 4. Call `get_leads` to find leads with status 'new' that haven't been contacted
+   - Skip leads where `active_automation` is set (automation is already handling them)
 4. For new leads:
    - Group them together
    - Suggest sending the welcome template to all at once

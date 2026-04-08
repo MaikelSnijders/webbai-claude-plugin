@@ -19,9 +19,11 @@ Call `get_inbound_messages` with `unread_only: true`.
 
 ## Step 2: Show messages with draft replies
 
-Each message includes an `already_replied` field. If true, show it as already handled instead of drafting a new reply.
+Each message includes:
+- `already_replied` — if true, show it as already handled instead of drafting a new reply
+- `active_automation` — if set, an automation flow is handling this contact. Show the automation name and next scheduled message instead of drafting a reply.
 
-Don't just list messages — immediately draft a reply for each unreplied one:
+Don't just list messages — immediately draft a reply for each one that needs attention:
 
 "You have **3 new messages:**
 

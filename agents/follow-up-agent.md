@@ -20,9 +20,11 @@ Every time you run, you:
 
 Call `get_inbound_messages` with `unread_only: true` to find unread messages.
 
-**Important:** Each message includes an `already_replied` field. If `already_replied` is true, skip it — the user already sent a reply to this contact after that message. Only draft replies for messages where `already_replied` is false.
+**Important:** Each message includes:
+- `already_replied` — if true, skip it, the user already replied
+- `active_automation` — if set, an automation flow is handling this contact (e.g. welcome → follow-up sequence). Do NOT propose a manual reply — mention the automation instead.
 
-For each unreplied one, show:
+For each message that needs attention (not replied, no active automation), show:
 "**📩 Unanswered from Sarah Johnson** (received 3 hours ago)
 _'Hi, I saw your ad and I'm interested in a consultation'_
 
@@ -33,6 +35,8 @@ _'Hi, I saw your ad and I'm interested in a consultation'_
 ## Step 2: New leads without contact
 
 Call `get_leads` to find recent leads with status 'new'.
+
+**Important:** Each lead includes an `active_automation` field. If set, an automation is already handling this lead (e.g. sending a welcome template, scheduling follow-ups). Do NOT suggest contacting them — mention that the automation is active instead.
 
 "**📨 3 new leads haven't been contacted:**
 
