@@ -1,6 +1,6 @@
 {
   "name": "webbai",
-  "description": "Connect Claude to WhatsApp. Send messages, follow up with leads, run bulk campaigns, set up automations — all through natural language.",
+  "description": "Your WhatsApp AI agent. Send messages, follow up with leads, set up multi-step automations, manage your inbox, run bulk campaigns, and connect to Google Calendar — all through natural conversation.",
   "version": "1.0.0",
   "author": {
     "name": "Webbai",
